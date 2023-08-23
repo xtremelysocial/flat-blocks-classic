@@ -1,15 +1,15 @@
 === Flat Blocks Classic ===
 Contributors: Tim Nicholson / XtremelySocial
 Requires at least: 6.2
-Tested up to: 6.2
-Requires PHP: 5.7
+Tested up to: 6.3
+Requires PHP: 7.4
 Stable tag: 1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
 
-Flat Blocks Classic is a Child Theme of Flat Blocks that has a more "classic" WordPress layout with right sidebars. There are Templates included to remove the sidebar on posts and pages, so you can mix and match layouts.
+Flat Blocks Classic is a Child Theme of Flat Blocks that has a more "classic" WordPress layout with right sidebars. There are Templates included to remove the sidebar on posts and pages, so you can mix and match layouts. It includes abbreviated page excerpts in the Page Titles.
 
 For more information go to [http://xtremelysocial.com/wordpress/flat-blocks/].
 
