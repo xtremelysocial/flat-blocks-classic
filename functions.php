@@ -25,8 +25,8 @@
 function flatblocks_classic_block_patterns( $block_patterns ) {
 
 	$new_patterns = array(
-		'text-welcome' => array( 
-			'title' => __( 'Welcome to our Site', 'flat-blocks' ),
+		'my-new-pattern' => array( 
+			'title' => __( 'My New Pattern', 'flat-blocks' ),
 			'categories' => array ( 'flatblocks', 'text', 'featured' ),
 			'blockTypes' => array ('core/heading', 'core/paragraph')
 		)
