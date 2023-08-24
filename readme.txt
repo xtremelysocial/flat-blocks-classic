@@ -42,7 +42,7 @@ You can check out our other themes here: https://xtremelysocial.com/wordpress/
 == Changelog ==
 
 = 1.0 = 
-June 24, 2023
+August 23, 2023
 
 Initial theme version
 
