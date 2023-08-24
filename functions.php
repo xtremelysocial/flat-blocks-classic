@@ -86,4 +86,4 @@ add_filter( 'flatblocks_custom_block_styles', 'flatblocks_classic_register_block
  * Overrides the parent theme from removing the core WordPress Block Patterns
  * 
 */
-add_filter('flatblocks_remove_core_patterns', function() { return false; } );
+//add_filter('flatblocks_remove_core_patterns', function() { return false; } );
