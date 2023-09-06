@@ -3,7 +3,7 @@ Contributors: Tim Nicholson / XtremelySocial
 Requires at least: 6.2
 Tested up to: 6.3
 Requires PHP: 7.4
-Stable tag: 1.0
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -43,8 +43,8 @@ You can check out our other themes here: https://xtremelysocial.com/wordpress/
 
 == Changelog ==
 
-= 1.0 = 
-September 5, 2023
+= 1.0.1 = 
+September 6, 2023
 
 Initial theme version
 
