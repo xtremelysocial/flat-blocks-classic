@@ -9,7 +9,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
 
-Flat Blocks Classic is a Child Theme of Flat Blocks that has a more "classic" WordPress layout with right sidebars. There are Templates included to remove the sidebar on posts and pages, so you can mix and match layouts. It includes abbreviated page excerpts in the Page Titles.
+Flat Blocks Classic is a Child Theme of Flat Blocks that has a more "classic" WordPress layout with right sidebars. There are Templates included to remove the sidebar on posts and pages, so you can mix and match layouts. It includes abbreviated page excerpts in the Page Titles too as a nice touch.
 
 For more information go to [http://xtremelysocial.com/wordpress/flat-blocks/].
 
@@ -22,11 +22,13 @@ For more information go to [http://xtremelysocial.com/wordpress/flat-blocks/].
 
 == How to Use This Child Theme ==
 
-This theme is a standard WordPress "child theme". It comes with a style.css file that you can edit to override the parent theme's CSS or add new CSS styles to use in your content. It also comes with a functions.php file in case you want to override any theme functions. If you want to make changes to any other files from the parent theme, copy the file down to the child theme directory and edit it there.
+This theme is a standard WordPress "child theme" of Flat Blocks. While you could make edits to it, it is strongly recommended that you create a copy of it in a new directory and update the theme name in style.css. 
 
-By using this child theme to customize Flat Blocks, you'll be able to upgrade that theme from WordPress.org to receive bug fixes and new features.
+The easiest way to do that is to use the [Create Block Theme](https://wordpress.org/plugins/create-block-theme/) plugin.
 
-If you make changes to this child theme's Templates or Template Parts, you can also still receive updates from WordPress.org. However, if you change any of the CSS or PHP files, you will lose those changes if you upgrade this child theme.
+Install the Create Child Theme plugin 
+Use the Full Site Editor to adjust any global styles, templates, template parts, etc. to your liking.
+Use the Create Child Theme plugin to export a new child theme based on this one.
 
 You can read more information about how to use child themes on WordPress.org [https://codex.wordpress.org/Child_Themes]
 
@@ -42,7 +44,7 @@ You can check out our other themes here: https://xtremelysocial.com/wordpress/
 == Changelog ==
 
 = 1.0 = 
-August 23, 2023
+September 5, 2023
 
 Initial theme version
 
