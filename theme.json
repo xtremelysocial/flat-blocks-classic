@@ -65,6 +65,18 @@
 			"postTypes": ["post"]
 		},
 		{
+			"name": "single-featured-image-sidebar-left",
+			"title": "Post with Featured Image and Left Sidebar",
+			"description": "Post w/large featured image and left sidebar",
+			"postTypes": ["post"]
+		},
+		{
+			"name": "single-featured-image-sidebar-right",
+			"title": "Post with Featured Image and Right Sidebar",
+			"description": "Post w/large featured image and right sidebar",
+			"postTypes": ["post"]
+		},
+		{
 			"name": "single-notitle",
 			"title": "Post No Title",
 			"postTypes": ["post"]
