@@ -20,6 +20,18 @@
 			"postTypes": ["page"]
 		},
 		{
+			"name": "page-featured-image-sidebar-left",
+			"title": "Page Featured Image Sidebar Left",
+			"description": "Page w/large featured image and left sidebar",
+			"postTypes": ["page"]
+		},
+		{
+			"name": "page-featured-image-sidebar-right",
+			"title": "Page Featured Image Sidebar Right",
+			"description": "Page w/large featured image and right sidebar",
+			"postTypes": ["page"]
+		},
+		{
 			"name": "page-notitle",
 			"title": "Page No Title",
 			"postTypes": ["page"]
