@@ -3,7 +3,7 @@ Contributors: Tim Nicholson / XtremelySocial
 Requires at least: 6.2
 Tested up to: 6.3
 Requires PHP: 7.4
-Stable tag: 1.0.4
+Stable tag: 1.0.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -42,6 +42,13 @@ For more information, see these pages on the XtremelySocial.com website:
 You can check out our other themes here: https://xtremelysocial.com/wordpress/
 
 == Changelog ==
+
+= 1.0.5 = 
+February 13, 2024
+
+* Changed Content Page Home Template Part cover image to be an antique typewriter to better reflect the "classic" nature of this theme. Note this requires Flat Blocks parent theme version 1.4.6 or higher.
+* In conjunction with above, changed the heading font to Source Serif Pro and the body font to Source Sans Pro. The serif font for the headings is more in line with the antique typewriter and "classic" nature of this theme.
+* Set footers to not underline theme link now that the Flat Blocks parent theme defaults to underlining most links.
 
 = 1.0.4 = 
 September 21, 2023
