@@ -1,11 +1,5 @@
 === Flat Blocks Classic ===
-Contributors: Tim Nicholson / XtremelySocial
-Requires at least: 6.2
-Tested up to: 6.3
-Requires PHP: 7.4
-Stable tag: 1.0.5
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Contributors:  XtremelySocial
 
 == Description ==
 
@@ -42,6 +36,11 @@ For more information, see these pages on the XtremelySocial.com website:
 You can check out our other themes here: https://xtremelysocial.com/wordpress/
 
 == Changelog ==
+
+= 1.1 =
+July 27, 2024
+
+* Breaking change: Changed Background and Foreground colors to Base and Contrast respectively to match the default WordPress TwentyTwentyFour theme. CSS was added for backward-compatibility to this theme's parent, Flat Blocks.
 
 = 1.0.5 = 
 February 13, 2024
