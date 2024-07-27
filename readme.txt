@@ -42,6 +42,7 @@ July 27, 2024
 
 * Breaking change: Changed Background and Foreground colors to Base and Contrast respectively to match the default WordPress TwentyTwentyFour theme. CSS was added for backward-compatibility to this theme's parent, Flat Blocks.
 * Updated theme.json to version 3 which allows the new WordPress v6.6 features, such as Block Style Variations. See https://make.wordpress.org/core/2024/06/19/theme-json-version-3/
+* Simplified theme.json to include ONLY the settings that override the parent theme (Flat Blocks). That includes Typography (font) settings and Custom Templates since this theme's default templates have sidebars, so there are "no sidebar" versions in this theme.
 
 = 1.0.5 = 
 February 13, 2024

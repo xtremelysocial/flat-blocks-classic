@@ -2,6 +2,28 @@
 	"$schema": "https://schemas.wp.org/wp/6.3/theme.json",
 	"title": "Flat Blocks Classic",
 	"version": 3,
+	"styles": {
+		"typography": {
+			"fontFamily": "var(--wp--preset--font-family--source-sans-pro)",
+			"fontSize": "var(--wp--preset--font-size--normal)",
+			"fontStyle": "normal",
+			"fontWeight": "300",
+			"lineHeight": "1.5",
+			"textTransform": "none"
+		},
+		"elements": {
+			"heading": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--source-serif-pro)",
+					"fontStyle": "normal",
+					"fontWeight": "300",
+					"lineHeight": "1.1",
+					"textTransform": "none",					
+					"textDecoration": "none"
+				}
+			}
+		}
+	},
 	"customTemplates": [
 		{
 			"description": "Page Home (cover image, no comments)",
