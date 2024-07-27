@@ -37,6 +37,11 @@ You can check out our other themes here: https://xtremelysocial.com/wordpress/
 
 == Changelog ==
 
+= 1.1.1 =
+July 27, 2024
+
+* Quick fix for theme preview on WordPress.org because it isn't using the parent theme's settings in theme.json, so we have to include the full set of settings from the parent too.
+
 = 1.1 =
 July 27, 2024
 
