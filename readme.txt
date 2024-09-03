@@ -37,6 +37,12 @@ You can check out our other themes here: https://xtremelysocial.com/wordpress/
 
 == Changelog ==
 
+- 1.2 = 
+September 3, 2024
+
+* Incorporated changes from the Flat Blocks parent theme, such as new Highlight and Highlight Alt colors (for links and buttons), adjusted drop-shadow presets, default font and link colors in colored sections, whether or not links are underlined by default in various colored sections, and various other theme.json settings.
+* Added names to all Header, Footer, Sidebar, Post Meta, and Main content groups to differentiate them from other groups in the Templates while viewing in the Editor.
+
 = 1.1.1 =
 July 27, 2024
 

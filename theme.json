@@ -4,26 +4,43 @@
 	"title": "Flat Blocks Classic",
 	"settings": {
 		"custom": {
-			"typography": {
-				"fontWeight": {
-					"normal": "300",
-					"medium": "400",
-					"bold": "500"
+			"color": {
+				"button": {
+					"background": "var(--wp--preset--color--highlight)",
+					"text": "var(--wp--preset--color--foreground-alt)"
+				},
+				"border": "var(--wp--preset--color--neutral-alt)",
+				"field": {
+					"background": "revert",
+					"text": "inherit",
+					"outline": "rgba(0, 0, 0, 0.25)"
 				}
 			},
 			"border": {
 				"color": "var(--wp--preset--color--neutral-alt)",
 				"radius": "5px"
 			},
+			"button": {
+				"color": "var(--wp--preset--color--highlight)",
+				"radius": "5px",
+				"hoverOpacity": "0.85"
+			},
 			"shadow": {
 				"default": "none"
 			},
 			"link": {
-				"color": "var(--wp--preset--color--primary)",
-				"hover": "var(--wp--preset--color--primary-alt)"
+				"thickness": "1px",
+				"postion": "under",
+				"offset": "auto",
+				"style": "solid",
+				"hoverOpacity": "0.8"
 			},
-			"outline": {
-				"color": "rgba(0, 0, 0, 0.25)"
+			"typography": {
+				"fontWeight": {
+					"normal": "300",
+					"medium": "400",
+					"bold": "500"
+				}
 			},
 			"animation": {
 				"duration": {
@@ -52,7 +69,7 @@
 		},
 		"lightbox": {
 			"allowEditing": true,
-			"enabled": true
+			"enabled": false
 		},
 		"spacing": {
 			"blockGap": true,
@@ -185,6 +202,16 @@
 					"slug": "contrast",
 					"color": "#555555",
 					"name": "Contast / Foreground (Very Dark Gray)"
+				},
+				{
+					"slug": "highlight",
+					"color": "#1abc9c",
+					"name": "Highlight (Light Green)"
+				},
+				{
+					"slug": "highlight-alt",
+					"color": "#16a085",
+					"name": "Highlight Alt (Green)"
 				},
 				{
 					"slug": "white",
@@ -518,17 +545,17 @@
 				{
 					"name": "Natural",
 					"slug": "natural",
-					"shadow": "0px 8px 24px rgba(149, 157, 165, 0.2)"
+					"shadow": "0px 7px 29px 0px rgba(100, 100, 111, 0.2)"
 				},
 				{
 					"name": "Deep",
 					"slug": "deep",
-					"shadow": "0px 7px 29px 0px rgba(100, 100, 111, 0.2)"
+					"shadow": "6px 6px 9px rgba(0, 0, 0, 0.2)"
 				},
 				{
 					"name": "Sharp",
 					"slug": "sharp",
-					"shadow": "6px 6px 9px rgba(0, 0, 0, 0.2)"
+					"shadow": "0px 5px 15px rgba(0, 0, 0, 0.35)"
 				},
 				{
 					"name": "Outline",
@@ -856,7 +883,7 @@
 				{
 					"slug": "medium",
 					"size": "22px",
-					"name": "Medium (h4)"
+			 		"name": "Medium (h4)"
 				},
 				{
 					"slug": "large",
@@ -902,7 +929,7 @@
 		},
 		"border": {
             "radius": "var(--wp--custom--border--radius)",
-            "color": "var(--wp--custom--border--color)",
+            "color": "var(--wp--custom--color--border)",
             "style": "solid",
             "width": "0"
         },
@@ -923,6 +950,12 @@
 					"lineHeight": "1.1",
 					"textTransform": "none",					
 					"textDecoration": "none"
+				},
+				"spacing": {
+					"margin": {
+						"top": "var(--wp--style--block-gap)",
+						"bottom": "var(--wp--style--block-gap)"
+					}
 				}
 			},
 			"h1": {
@@ -973,8 +1006,8 @@
 			},
 			"button": {
 				"color": {
-					"background": "var(--wp--custom--link--color)",
-					"text": "var(--wp--preset--color--foreground-alt)"
+					"background": "var(--wp--custom--color--button--background)",
+					"text": "var(--wp--custom--color--button--text)"
 				},
 				"typography": {
 					"fontSize": "var(--wp--preset--font-size--normal)",
@@ -983,36 +1016,33 @@
 					"lineHeight": "1.25"
 				},
 				"border": {
-					"radius": "var(--wp--custom--border--radius)"
+					"radius": "var(--wp--custom--button--radius)"
 				}
 			},
 			"link": {
 				"color": {
-					"text": "var(--wp--custom--link--color)"
+					"text": "var(--wp--preset--color--highlight)"
 				},
 				"typography": {
-					"textDecoration": "none"
+					"textDecoration": "underline"
 				},
 				":hover": {
 					"color": {
-						"text": "var(--wp--custom--link--hover)"
+						"text": "var(--wp--preset--color--highlight-alt)"
 					}
 				},
 				":active": {
 					"color": {
-						"text": "var(--wp--custom--link--hover)"
+						"text": "var(--wp--preset--color--highlight-alt)"
 					}
 				}
 			}
 		},
 		"blocks": {
-			"core/post-content": {
-				"elements": {
-					"link": {
-						"typography": {
-							"textDecoration": "underline"
-						}
-					}
+			"core/image": {
+				"lightbox": {
+					"allowEditing": true,
+					"enabled": false
 				}
 			},
 			"core/group": {
@@ -1039,7 +1069,7 @@
 			"core/button": {
 				"border": {
 					"width": "0",
-					"radius": "var(--wp--custom--border--radius)"
+					"radius": "var(--wp--custom--button--radius)"
 				},
 				"shadow": "var(--wp--custom--shadow--default)",
 				"typography": {
@@ -1114,12 +1144,12 @@
 					"link": {
 						":hover": {
 							"color": {
-								"text": "var(--wp--custom--link--hover)"
+								"text": "var(--wp--preset--color--highlight-alt)"
 							}
 						},
 						":active": {
 							"color": {
-								"text": "var(--wp--custom--link--hover)"
+								"text": "var(--wp--preset--color--highlight-alt)"
 							}
 						}
 					}
@@ -1129,7 +1159,7 @@
 				"elements": {
 					"button": {
 						"border": {
-							"radius": "var(--wp--custom--border--radius)"
+							"radius": "var(--wp--custom--button--radius)"
 						}
 					}
 				}
@@ -1144,7 +1174,7 @@
 						"shadow": "var(--wp--custom--shadow--default)",
 						"border": {
 							"width": "0px",
-							"radius": "var(--wp--custom--border--radius)"
+							"radius": "var(--wp--custom--button--radius)"
 						}
 					}
 				}
@@ -1163,7 +1193,7 @@
 			},
 			"core/post-featured-image": {
 				"border": {
-					"color": "var(--wp--custom--border--color)",
+					"color": "var(--wp--custom--color--border)",
 					"style": "solid",
 					"radius": "var(--wp--custom--border--radius)",
 					"width": "1px"
@@ -1268,7 +1298,7 @@
 				"elements": {
 					"link": {
 						"typography": {
-							"textDecoration": "none"
+							"textDecoration": "none !important"
 						}
 					}
 				}
@@ -1282,19 +1312,19 @@
 				"elements": {
 					"link": {
 						"color": {
-							"text": "var(--wp--custom--link--color)"
+							"text": "var(--wp--preset--color--highlight)"
 						},
 						"typography": {
 							"textDecoration": "none"
 						},
 						":hover": {
 							"color": {
-								"text": "var(--wp--custom--link--hover)"
+								"text": "var(--wp--preset--color--highlight-alt)"
 							}
 						},
 						":active": {
 							"color": {
-								"text": "var(--wp--custom--link--hover)"
+								"text": "var(--wp--preset--color--highlight-alt)"
 							}
 						}
 					}
@@ -1310,18 +1340,18 @@
 				}
 			},
 			"core/code": {
+				"border": {
+					"style": "solid",
+					"color": "var(--wp--custom--color--border)",
+					"radius": "var(--wp--custom--border--radius)",
+					"width": "1px"
+				},
 				"spacing": {
 					"padding": "var:preset|spacing|40"
 				},
-				"border": {
-					"style": "solid",
-					"color": "var(--wp--custom--border--color)",
-					"radius": "var(--wp--custom--border--radius)",
-					"width": "3px"
-				},
 				"color": {
 					"background": "var(--wp--preset--color--neutral)",
-					"text": "var(--wp--preset--color--very-dark-gray)"
+					"text": "var(--wp--preset--color--almost-black)"
 				},
 				"typography": {
 					"fontFamily": "var(--wp--preset--font-family--roboto-mono)",
@@ -1347,6 +1377,13 @@
 			"core/post-terms": {
 				"typography": {
 					"fontSize": "var(--wp--preset--font-size--small)"
+				},
+				"elements": {
+					"link": {
+						"typography": {
+							"textDecoration": "none"
+						}
+					}
 				}
 			},
 			"core/post-author": {
@@ -1486,17 +1523,27 @@
 							"textDecoration": "none"
 						}
 					}
-				}
-			},
-			"core/post-terms": {
-				"elements": {
-					"link": {
-						"typography": {
-							"textDecoration": "none"
+				},
+				"variations": {
+					"outline": {
+						"elements": {
+							"link": {
+								"border": {
+									"radius": "var(--wp--custom--button--radius)"
+								},
+								"spacing": {
+									"padding": {
+										"top": "var:preset|spacing|20",
+										"right": "var:preset|spacing|30",
+										"bottom": "var:preset|spacing|20",
+										"left": "var:preset|spacing|30"
+									}
+								}
+							}
 						}
 					}
 				}
-			},
+			},			
 			"core/page-list": {
 				"elements": {
 					"link": {
@@ -1701,6 +1748,12 @@
 			"area": "title"
 		},
 		{
+			"name": "page-title-no-excerpt",
+			"title": "Page Title w/outExcerpt",
+			"description": "Page title without excerpt",
+			"area": "title"
+		},
+		{
 			"name": "content-article",
 			"title": "Content Article",
 			"description": "Blog list article (featured image, title, date, and excerpt)",
@@ -1791,6 +1844,12 @@
 			"area": "footer"
 		},
 		{
+			"name": "footer-about-3-navs",
+			"title": "Footer About and 3 Menus",
+			"description": "Footer w/block 3 (About) and 3 nav menus",
+			"area": "footer"
+		},
+		{
 			"name": "footer-about-3-navs-site-info",
 			"title": "Footer About and 3 Menus with Site Info",
 			"description": "Footer w/block 3 (About), 3 nav menus, and site info",
@@ -1865,215 +1924,161 @@
 	],
 	"customTemplates": [
 		{
-			"description": "Page Home (cover image, no comments)",
 			"name": "page-home",
-			"postTypes": [
-				"page"
-			],
-			"title": "Page Home (cover image, no comments)"
+			"title": "Page Home (cover image, no comments)",
+			"description": "Home page (cover image, no comments)",
+			"postTypes": ["page"]
 		},
 		{
-			"description": "Page w/featured cover image",
 			"name": "page-featured-cover",
-			"postTypes": [
-				"page"
-			],
-			"title": "Page with Featured Cover Image"
+			"title": "Page Featured Cover Image",
+			"description": "Page w/featured cover image",
+			"postTypes": ["page"]
 		},
 		{
-			"description": "Page w/large featured image",
 			"name": "page-featured-image",
-			"postTypes": [
-				"page"
-			],
-			"title": "Page with Featured Image"
+			"title": "Page Featured Image",
+			"description": "Page w/large featured image",
+			"postTypes": ["page"]
 		},
 		{
-			"description": "Page w/large featured image and left sidebar",
 			"name": "page-featured-image-sidebar-left",
-			"postTypes": [
-				"page"
-			],
-			"title": "Page Featured Image Sidebar Left"
+			"title": "Page Featured Image Sidebar Left",
+			"description": "Page w/large featured image and left sidebar",
+			"postTypes": ["page"]
 		},
 		{
-			"description": "Page w/large featured image and right sidebar",
 			"name": "page-featured-image-sidebar-right",
-			"postTypes": [
-				"page"
-			],
-			"title": "Page Featured Image Sidebar Right"
+			"title": "Page Featured Image Sidebar Right",
+			"description": "Page w/large featured image and right sidebar",
+			"postTypes": ["page"]
 		},
 		{
-			"description": "Page w/out title",
 			"name": "page-notitle",
-			"postTypes": [
-				"page"
-			],
-			"title": "Page No Title"
+			"title": "Page No Title",
+			"description": "Page w/out title",
+			"postTypes": ["page"]
 		},
 		{
-			"description": "Page w/out comments",
 			"name": "page-nocomments",
-			"postTypes": [
-				"page"
-			],
-			"title": "Page No Comments"
+			"title": "Page No Comments",
+			"description": "Page w/out comments",
+			"postTypes": ["page"]
 		},
 		{
-			"description": "Page w/out title or comments",
 			"name": "page-notitle-nocomments",
-			"postTypes": [
-				"page"
-			],
-			"title": "Page No Title or Comments"
+			"title": "Page No Title or Comments",
+			"description": "Page w/out title or comments",
+			"postTypes": ["page"]
 		},
 		{
-			"description": "Page Content Only (No header, title, comments, or footer)",
 			"name": "page-content-only",
-			"postTypes": [
-				"page"
-			],
-			"title": "Page Content Only (No header, title, comments, or footer)"
+			"title": "Page Content Only (No header, title, comments, or footer)",
+			"description": "Page w/content only (no header, title, comments, or footer)",
+			"postTypes": ["page"]
 		},
 		{
-			"description": "Sitemap (pages list, categories, recent posts)",
 			"name": "page-sitemap",
-			"postTypes": [
-				"page"
-			],
-			"title": "Page Site Map"
+			"title": "Page Site Map",
+			"description": "Sitemap (pages list, categories, recent posts)",
+			"postTypes": ["page"]
 		},
 		{
-			"description": "Page w/left sidebar",
 			"name": "page-sidebar-left",
-			"postTypes": [
-				"page"
-			],
-			"title": "Page Left Sidebar"
+			"title": "Page Left Sidebar",
+			"description": "Page w/left sidebar",
+			"postTypes": ["page"]
 		},
 		{
-			"description": "Page w/right sidebar",
 			"name": "page-sidebar-right",
-			"postTypes": [
-				"page"
-			],
-			"title": "Page Right Sidebar"
+			"title": "Page Right Sidebar",
+			"description": "Page w/right sidebar",
+			"postTypes": ["page"]
 		},
 		{
-			"description": "Post w/featured cover image",
 			"name": "single-featured-cover",
-			"postTypes": [
-				"post"
-			],
-			"title": "Post with Featured Cover Image"
+			"title": "Post with Featured Cover Image",
+			"description": "Post w/featured cover image",
+			"postTypes": ["post"]
 		},
 		{
-			"description": "Post w/large featured image",
 			"name": "single-featured-image",
-			"postTypes": [
-				"post"
-			],
-			"title": "Post with Featured Image"
+			"title": "Post with Featured Image",
+			"description": "Post w/large featured image",
+			"postTypes": ["post"]
 		},
 		{
-			"description": "Post w/large featured image and left sidebar",
 			"name": "single-featured-image-sidebar-left",
-			"postTypes": [
-				"post"
-			],
-			"title": "Post with Featured Image and Left Sidebar"
+			"title": "Post with Featured Image and Left Sidebar",
+			"description": "Post w/large featured image and left sidebar",
+			"postTypes": ["post"]
 		},
 		{
-			"description": "Post w/large featured image and right sidebar",
 			"name": "single-featured-image-sidebar-right",
-			"postTypes": [
-				"post"
-			],
-			"title": "Post with Featured Image and Right Sidebar"
+			"title": "Post with Featured Image and Right Sidebar",
+			"description": "Post w/large featured image and right sidebar",
+			"postTypes": ["post"]
 		},
 		{
-			"description": "Post w/out title",
 			"name": "single-notitle",
-			"postTypes": [
-				"post"
-			],
-			"title": "Post No Title"
+			"title": "Post No Title",
+			"description": "Post w/out title",
+			"postTypes": ["post"]
 		},
 		{
-			"description": "Post w/out comments",
 			"name": "single-nocomments",
-			"postTypes": [
-				"post"
-			],
-			"title": "Post No Comments"
+			"title": "Post No Comments",
+			"description": "Post w/out comments",
+			"postTypes": ["post"]
 		},
 		{
-			"description": "Post w/out title or comments",
 			"name": "single-notitle-nocomments",
-			"postTypes": [
-				"post"
-			],
-			"title": "Post No Title or Comments"
+			"title": "Post No Title or Comments",
+			"description": "Post w/out title or comments",
+			"postTypes": ["post"]
 		},
 		{
-			"description": "Post Content Only (No title, date, categories, tags, author, or comments)",
 			"name": "single-content-only",
-			"postTypes": [
-				"post"
-			],
-			"title": "Post Content Only (No title, date, categories, tags, author, or comments)"
+			"title": "Post Content Only (No title, date, categories, tags, author, or comments)",
+			"description": "Post Content Only (No title, date, categories, tags, author, or comments)",
+			"postTypes": ["post"]
 		},
 		{
-			"description": "Post w/left sidebar",
 			"name": "single-sidebar-left",
-			"postTypes": [
-				"post"
-			],
-			"title": "Post Left Sidebar"
+			"title": "Post Left Sidebar",
+			"description": "Post w/left sidebar",
+			"postTypes": ["post"]
 		},
 		{
-			"description": "Post w/right sidebar",
 			"name": "single-sidebar-right",
-			"postTypes": [
-				"post"
-			],
-			"title": "Post Right Sidebar"
+			"title": "Post Right Sidebar",
+			"description": "Post w/right sidebar",
+			"postTypes": ["post"]
 		},
 		{
 			"name": "page-nosidebar",
-			"postTypes": [
-				"page"
-			],
-			"title": "Page No Sidebar"
+			"title": "Page No Sidebar",
+			"postTypes": ["page"]
 		},
 		{
 			"name": "page-nocomments-nosidebar",
-			"postTypes": [
-				"page"
-			],
-			"title": "Page No Comments No Sidebar"
+			"title": "Page No Comments No Sidebar",
+			"postTypes": ["page"]
 		},
 		{
 			"name": "page-featured-image-nosidebar",
-			"postTypes": [
-				"page"
-			],
-			"title": "Page Featured Image No Sidebar"
+			"title": "Page Featured Image No Sidebar",
+			"postTypes": ["page"]
 		},
 		{
 			"name": "single-nosidebar",
-			"postTypes": [
-				"post"
-			],
-			"title": "Post No Sidebar"
+			"title": "Post No Sidebar",
+			"postTypes": ["post"]
 		},
 		{
 			"name": "single-featured-image-nosidebar",
-			"postTypes": [
-				"post"
-			],
-			"title": "Post Featured Image No Sidebar"
+			"title": "Post Featured Image No Sidebar",
+			"postTypes": ["post"]
 		}
 	]
 }
