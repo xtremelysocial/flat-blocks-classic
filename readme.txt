@@ -37,7 +37,13 @@ You can check out our other themes here: https://xtremelysocial.com/wordpress/
 
 == Changelog ==
 
-- 1.2 = 
+= 1.3 = 
+November 26, 2024
+
+* Incorporated changes from the Flat Blocks parent theme in the Styles Editor (theme.json) and various Template Parts, Templates, and Block Patterns.
+* Changed default Site Contents section in the Sidebar to use a Pages List so it lists all the pages on your site.
+
+= 1.2 = 
 September 3, 2024
 
 * Incorporated changes from the Flat Blocks parent theme, such as new Highlight and Highlight Alt colors (for links and buttons), adjusted drop-shadow presets, default font and link colors in colored sections, whether or not links are underlined by default in various colored sections, and various other theme.json settings.
