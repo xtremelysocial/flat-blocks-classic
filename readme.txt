@@ -37,6 +37,12 @@ You can check out our other themes here: https://xtremelysocial.com/wordpress/
 
 == Changelog ==
 
+= 1.3.1 = 
+December 1, 2024
+
+* Update Site Copyright and Theme Tagline used in various headers to display properly when previewing the theme on WordPress.org. For some reason, parent theme Block Patterns written in PHP aren't being loaded in child themes in the previews.
+* Let Paragraph top and bottom margin default based on the font size (i.e. "1 em").
+
 = 1.3 = 
 November 26, 2024
 
