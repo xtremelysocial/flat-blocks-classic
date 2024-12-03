@@ -37,6 +37,12 @@ You can check out our other themes here: https://xtremelysocial.com/wordpress/
 
 == Changelog ==
 
+= 1.3.2 = 
+December 2, 2024
+
+* More updates to Site Copyright and Theme Tagline Block Patterns used in various Footers. These are now driven by Block Bindings added to the parent Flat Blocks theme v1.9.4.
+* Set light default link and button color on Midnight Blue and Dark Midnight Blue backgrounds to match recent change to the Flat Blocks parent theme. This is more consistent with the handling of other dark accent colors.
+
 = 1.3.1 = 
 December 1, 2024
 
