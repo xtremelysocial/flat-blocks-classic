@@ -37,6 +37,14 @@ You can check out our other themes here: https://xtremelysocial.com/wordpress/
 
 == Changelog ==
 
+= 1.3.3 = 
+December 7, 2024
+
+* Update Sidebar to add top margin now that the parent Flat Blocks theme requires it. If you have edited the sidebar, you should add top margin to it. For now, we've added CSS to handle it. 
+* Since the "No Sidebar" page and post Templates from this theme were added to the parent Flat Blocks theme, they aren't needed here anymore.
+* Added the Footer w/Motto and Social Icons from the parent theme to this child theme. 
+* Added in the PHP-based Block Patterns from the parent theme since the WordPress.org theme preview isn't loading them for some reason. 
+
 = 1.3.2 = 
 December 2, 2024
 

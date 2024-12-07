@@ -1372,6 +1372,14 @@
 					}
 				}				
 			},
+			"core/comments": {
+				"spacing": {
+					"margin": {
+						"top": "var:preset|spacing|40",
+						"bottom": "var:preset|spacing|40"
+					}
+				}
+			},
 			"core/comments-title": {
 				"spacing": {
 					"margin": {
@@ -1933,6 +1941,12 @@
 			"name": "footer-map-jetpack",
 			"title": "Footer w/Jetpack Map and Contact Info",
 			"description": "Footer w/Jetpack map and contact info",
+			"area": "footer"
+		},
+		{
+			"name": "footer-motto-social-icons",
+			"title": "Footer w/Motto and Social Icons",
+			"description": "Footer w/motto and huge social icons",
 			"area": "footer"
 		},
 		{
