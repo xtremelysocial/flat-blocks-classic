@@ -37,6 +37,41 @@ You can check out our other themes here: https://xtremelysocial.com/wordpress/
 
 == Changelog ==
 
+= 2.0 = 
+January 2, 2024
+
+Update the Flat Blocks Classic child theme based on version 2.0 of the parent theme, Flat Blocks.
+
+Flat Blocks Version 2.0 Summary: Updated minimum WordPress version required to 6.7 which coupled with simplifying CSS throughout significantly reduced the amount of CSS needed by over 25%. The theme now only loads the CSS styles needed for each page and instructs WordPress to also do this, which further reduces the amount of CSS for most pages. Added 5 new gradients based on the recent duotones that were added. Changed Larger and Extra Large font slugs to match the TwentyTwentyFive theme.
+
+Changes to look out for and update your content if necessary:
+* Change "Extra Large" font size to use "2X Large" and "Larger" font size to use "Extra Large".
+* Check top margins on pages and posts with sidebars, both with and without featured images. If there is extra top margin, you can remove it from the sidebar and/or featured image. 
+* Check footers with copyright date and/or theme info that might be using Block Bindings. Use the more recent Template Parts (Site Copyright, Theme Tagline).
+* If you are still using the really old "Background" and "Foreground" colors, change them to "Base" and "Contrast" colors instead.
+* If coming over to Flat Blocks from another theme, change out the background and text colors. Unknown background colors are mapped to the Primary color (light green by default) and the text color to Foreground Alt (offwhite by default).
+
+More Details:
+* Updated minimum WordPress version required to 6.7 and dropped all the code needed to support back to Wordpress v6.5.
+* CSS Enhancements and Optimization:
+	* Simplified the CSS for default text and link colors on colored backgrounds as well as for Navigation highlights which reduced CSS by over 25%.
+	* Now Dashicons CSS only loads if in use on a particular page, further reducing CSS on most pages. Also enhanced it to work better with optimization plugins that concatenate CSS, such as Jetpack Boost.
+	* The theme now instructs WordPress to only load the CSS styles needed for each page (which is the default in WordPress v6.7). The theme itself now also does this which lets core WordPress optimize whether styles are loaded inline or in separate CSS file(s).
+	* Rewrote the CSS for top margin on blocks to be consistent with WordPress vertical spacing as well as no longer require certain Template Parts and Templates to add top-margin.
+	* Enhanced the CSS for horizontal padding on tablet and mobile so that groups and columns with colored backgrounds line up better with the site's global padding. 
+	* Enhanced the CSS for default text color on Cover Images.
+	* Added clear floats automatically to Groups which have align left and align right in them. This is only done on normal (non-flex) Groups, not on Rows (flex).
+	* For users migrating from other themes, we now map unknown background colors to mapped to the Primary color (Light Green by default) and the text color to Foreground Alt (Off White by default).
+	* Added legacy support for Flat Blocks versions 1.9x, specifically for deprecated font sizes, top margins, and the scroll down arrow. Removed legacy support for older theme versions, such as the use of "foreground" and "background" color names (use contrast and base now).
+* Changed icons that the theme uses directly to SVG instead of Dashicons, such as post date, author name, scroll down arrow, etc. So Dashicons CSS styles will only load when used in your content itself.
+* Changed the "Larger" font size (larger) to "Extra Large" (x-large) and "Extra Large" (x-large) to "2X Large" (xx-large) for compatibility with the TwentyTwentyFive theme. Added CSS for backwards compatibility, but you should update the font sizes in your content at some point.
+* Added more gradient options to match the duotones added in Flat Blocks v1.9: Purple to Yellow, Purple to Green, Blue to Red, Blue to Orange, and Midnight (Midnight Blue to Blue).
+* Added Block Pattern for Cover Camera. 
+* Added WEBP versions of all cover images. The JPEG versions are still used in the various Block Patterns, but if your web server supports WEBP then you can upload them to your Media Library and use them instead. WEBP is a more optimized image format specifically for use on the web. 
+* Removed Block Bindings for site copyright year and theme info. Template Parts with Block Patterns are now used instead. 
+* Rewrote the main functions.php to radically simplify it as well. It now uses an array to load other PHP include files as well as an array for which CSS stylesheets to load. Code needed for older WordPress versions was removed. 
+* For developers: Updated webpack.config.js to add postcss-loader to use autoprefixer to add browser prefixes automatically (e.g. -webkit-mask-image). Removed our vendor-prefixes mixin as it is no longer needed. 
+
 = 1.3.3 = 
 December 7, 2024
 
