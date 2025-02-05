@@ -37,8 +37,23 @@ You can check out our other themes here: https://xtremelysocial.com/wordpress/
 
 == Changelog ==
 
+= 2.0.2 = 
+February 5, 2025
+
+Update the Flat Blocks Classic child theme based on version 2.0.2 of the parent theme, Flat Blocks. 
+
+Flat Blocks v2.0.2 Release Notes:
+* Template Parts:
+	* Added new ones for Search Title, 404 (Error Page) Title, and Archive (Blog) Title. These can be found under the "Title" category in the Block Patterns in the Editor along with the Page Title and Post Title Template Parts. 
+	* On the Page Title, set the Excerpt length to 20 words (was 30).
+	* Updated the various Templates to use the new title Template Parts.
+* Enhanced CSS:
+	* Add bottom margin on the last element in the Post Content (unless the user overrides it on the block).
+	* Inherit text alignment on Dashicons.
+	* Fix link hover color in the Editor (issue is with WordPress v6.7).
+
 = 2.0 = 
-January 2, 2024
+January 2, 2025
 
 Update the Flat Blocks Classic child theme based on version 2.0 of the parent theme, Flat Blocks.
 
